@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53639206125",
+    "project_id": "top-up-63027",
+    "storage_bucket": "top-up-63027.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53639206125:android:f117b9e46322fb0125e8e4",
+        "android_client_info": {
+          "package_name": "com.jjjbazar.smsgateway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53639206125-vcrlvlap9glmv2k7ca89pm5vt075cl17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjHG5qqLbMp2vdtUAhF_bcnT5BhKp3rCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53639206125-9qkja738efac6bmp8pd3fvb0gif1emu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

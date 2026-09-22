@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="JJJ SMS Reader"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#F8FAFC"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="SMS Gateway  •  v6.4"
+            android:textSize="13sp"
+            android:textColor="#94A3B8"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="14dp"
+            android:background="#1E293B">
+
+            <TextView
+                android:id="@+id/onlineDot"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="#22C55E" />
+
+            <TextView
+                android:id="@+id/onlineLabel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:text="ONLINE"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#16A34A" />
+
+            <Button
+                android:id="@+id/onlineBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Go Offline"
+                android:textSize="12sp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:background="#FEE2E2"
+                android:textColor="#B91C1C" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:padding="16dp"
+            android:background="#ECFDF5"
+            android:textColor="#134E4A"
+            android:textSize="13.5sp"
+            android:lineSpacingExtra="3dp"
+            android:fontFamily="monospace"
+            android:text="Status loading..." />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="METHODS"
+            android:textSize="12sp"
+            android:textColor="#64748B"
+            android:letterSpacing="0.12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBkash"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:text="bKash ON"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="#166534" />
+
+            <Button
+                android:id="@+id/btnNagad"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:text="Nagad ON"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="#166534" />
+
+            <Button
+                android:id="@+id/btnRocket"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:text="Rocket ON"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF"
+                android:background="#166534" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:background="#1E293B"
+            android:text="যে method OFF থাকবে সেটার SMS আপলোড হবে না"
+            android:textColor="#94A3B8"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="SETUP"
+            android:textSize="12sp"
+            android:textColor="#64748B"
+            android:letterSpacing="0.12" />
+
+        <Button
+            android:id="@+id/permissionBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="1. Allow SMS Permission"
+            android:textColor="#FFFFFF"
+            android:background="#3B82F6"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/batteryBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="2. Battery  Unrestricted"
+            android:textColor="#FFFFFF"
+            android:background="#8B5CF6"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/scanBtn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:text="Manual Scan (optional)"
+            android:textColor="#0F172A"
+            android:background="#E2E8F0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:background="#1E293B"
+            android:text="• Online = প্রতি ২ মিনিটে অটো স্ক্যান\n• Notification এ Gateway Online দেখাবে (কিল হলেও চলার জন্য)\n• Status এ Last auto scan time আপডেট হবে\n• Force Stop করবেন না"
+            android:textColor="#94A3B8"
+            android:textSize="12.5sp"
+            android:lineSpacingExtra="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="12dp"
+            android:text="Privacy  •  শুধু Amount + TxnID পাঠায়"
+            android:textColor="#475569"
+            android:textSize="11sp"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>
