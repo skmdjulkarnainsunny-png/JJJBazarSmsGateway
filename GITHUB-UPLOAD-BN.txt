@@ -1,0 +1,33 @@
+=== GitHub এ কীভাবে আপলোড করবেন (গুরুত্বপূর্ণ) ===
+
+ভুল: সব .java / xml রুটে ফ্ল্যাট আপলোড
+ঠিক: app/ ফোল্ডারসহ স্ট্রাকচার রাখা
+
+১) GitHub রিপো খুলুন
+২) পুরনো ভুল ফাইলগুলো ডিলিট করুন (রুটের .java, .xml, AndroidManifest ইত্যাদি)
+৩) এই ZIP খুলুন
+৪) ভিতরে দেখবেন:
+     .github/
+     app/
+     build.gradle
+     settings.gradle
+     gradle.properties
+     .gitignore
+
+৫) এইগুলোই রিপোর রুটে আপলোড করুন
+   - app ফোল্ডার পুরোটা একসাথে
+   - রুটের build.gradle = ছোট ফাইল (buildscript...)
+   - app/build.gradle = apply plugin...
+
+চেকলিস্ট (GitHub এ দেখলে এমন হবে):
+  JJJBazarSmsGateway/
+  ├── .github/workflows/build-apk.yml
+  ├── app/
+  │   ├── build.gradle
+  │   ├── google-services.json
+  │   └── src/main/java/.../MainActivity.java
+  ├── build.gradle
+  ├── settings.gradle
+  └── gradle.properties
+
+রুটে MainActivity.java / AndroidManifest.xml থাকলে ভুল।

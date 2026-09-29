@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    namespace 'com.jjjbazar.smsgateway'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.jjjbazar.smsgateway"
+        minSdk 26
+        targetSdk 35
+        versionCode 17
+        versionName "6.7.1-fix"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:33.10.0')
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'androidx.core:core:1.15.0'
+}
